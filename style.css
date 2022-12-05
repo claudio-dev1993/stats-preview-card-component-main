@@ -114,7 +114,7 @@ body {
     color: var(--Soft-violet-accent);
 }
 
-@media screen and (max-width: 480.98px) {
+@media screen and (max-width: 680.98px) {
     .body {
         flex-direction: column;
         justify-content: center;
