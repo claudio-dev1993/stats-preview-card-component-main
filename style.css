@@ -35,14 +35,14 @@ body {
     border-radius: 1rem;
 }
 
-.card__article {
+.article {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     max-width: 30rem;
 }
 
-.article__section-1 {
+.section-1 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -56,7 +56,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.insight--strong {
+.section-1__insight--strong {
     color: var(--Soft-violet-accent);
 }
 
@@ -68,7 +68,7 @@ body {
     width: 90%;
 }
 
-.article__section-2 {
+.section-2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -79,37 +79,43 @@ body {
 .section-2__stats {
     color: var(--Slightly-transparent-white-main-paragraph);
     text-transform: uppercase;
+    letter-spacing: 0.1rem;
     font-size: 0.8rem;
-    
 }
 
-.stats--strong {
+.section-2__stats--strong {
     font-size: 1.3rem ;
-    padding: 1.5rem 0;
+    font-weight: bold;
+    line-height: 2rem;
+    letter-spacing: normal;
     color: var(--White-main-heading-stats);
 }
 
-.card__aside {
+.fig-aside {
     max-width: 30rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 0 1rem 1rem 0;
-    background-color: var(--Soft-violet-accent);
+    background-color: var(--Soft-violet-accent); 
+    
 }
 
-.aside__image {
+.fig-aside__image {
     width: 100%;
     border-radius: 0 1rem 1rem 0;
-    opacity: 55%;
+    content: url(/images/image-header-desktop.jpg);
+    mix-blend-mode: multiply;
+    opacity: 80%;
 }
+
 
 .footer__text {
     text-align: center;
     color: var(--Slightly-transparent-white-main-paragraph);
 }
 
-.text--link {
+.footer__link {
     text-decoration: none;
     color: var(--Soft-violet-accent);
 }
@@ -125,7 +131,7 @@ body {
         margin: 4.5rem 1rem;
     }
 
-    .aside__image , .card__aside {
+    .fig-aside__image , .fig-aside {
         border-radius: 1rem 1rem 0 0;
     }
 
@@ -142,7 +148,7 @@ body {
         line-height: 1.2rem;
     }
 
-    .article__section-2 {
+    .section-2 {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
