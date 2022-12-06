@@ -104,7 +104,6 @@ body {
 .fig-aside__image {
     width: 100%;
     border-radius: 0 1rem 1rem 0;
-    content: url(/images/image-header-desktop.jpg);
     mix-blend-mode: multiply;
     opacity: 80%;
 }
